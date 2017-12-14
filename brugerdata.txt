@@ -1,0 +1,4 @@
+9. Brugerdata i Databasen
+Hvis der gemmes brugerdata, der er personlige for brugeren (f.eks. brugernavn og password), hvordan kan de sikres imod afsløring i tilfælde af et SQL-injektion angreb.
+Dataen kan sikres ved hjælp af 2 ting ”SALT” og ”HASH” det der sker, er at man giver det sensitive data salt. Salt fungerer på den måde som hvis man oversalter aftensmaden. Man tilsætter mere end der er brug for så hvis vi har en kode ”1234” tilsætter vi en genereret salt-value som kan være ”O23I5O5H23H5OB3O3” så vil den nye data være ”1234O23I5O5H23H5OB3O3” efter følgende kan man kryptere dataen. Dette gør daten ulæseligt hvis man trækker det ud af databasen uden at have saltværdien og krypterings nøglen.
+Hashing er i bund og grund en kryptering. Hash er designet til at være en 'envejs funktion'.  En algoritme som er nem at udføre men den kan ikke dekrypteres.

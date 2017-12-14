@@ -1,0 +1,19 @@
+table{
+    border: thin;
+    border-color: darkblue;
+    background-image: url("http://bgfons.com/uploads/lines/lines_texture1095.jpg");
+
+}
+
+td{
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+th{
+
+
+       color: white;
+}
